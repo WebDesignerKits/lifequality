@@ -94,8 +94,8 @@
       });
       function loadPath(){
         path = window.location.pathname;
-        if(path==""){
-          path = "script.js";
+        if(path=="" || path=="/"){
+          path = "home.js";
         }
         console.log(path)
         $.getScript(path+".js",function(){
