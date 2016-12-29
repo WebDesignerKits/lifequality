@@ -95,7 +95,7 @@
       function loadPath(){
         path = window.location.pathname;
         if(path=="" || path=="/"){
-          path = "home.js";
+          path = "home";
         }
         console.log(path)
         $.getScript(path+".js",function(){
